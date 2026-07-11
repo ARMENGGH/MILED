@@ -4,36 +4,20 @@
 // GALILOS ❤️ MILOS
 // =======================
 
-// Music control
-
 const music = document.getElementById("music");
 const musicBtn = document.getElementById("musicBtn");
 
-let playing = false;
+musicBtn.addEventListener("click", function () {
 
-musicBtn.onclick = async function(){
-
-    if (!playing) {
-
-        try {
-            await music.play();
-            musicBtn.innerHTML = "🔇 Pause";
-            playing = true;
-
-        } catch(error) {
-            console.log(error);
-            alert("Music file cannot be played. Check music.mp3");
-        }
-
+    if (music.paused) {
+        music.play();
+        musicBtn.innerHTML = "🔇 Pause";
     } else {
-
         music.pause();
         musicBtn.innerHTML = "🎵 Music";
-        playing = false;
-
     }
 
-};
+});
 
 // Relationship timer
 // Change this date to your exact first day together
