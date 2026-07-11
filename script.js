@@ -160,3 +160,18 @@ function closeEpisode2(){
     document.getElementById("episode2").style.display="none";
 
 }
+
+
+// Episode 3 controls
+
+function openEpisode3(){
+
+    document.getElementById("episode3").style.display = "block";
+
+}
+
+function closeEpisode3(){
+
+    document.getElementById("episode3").style.display = "none";
+
+}
