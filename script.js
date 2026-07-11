@@ -1,4 +1,4 @@
-Th
+
 // =======================
 // Netflix Anniversary Website
 // GALILOS ❤️ MILOS
@@ -11,23 +11,29 @@ const musicBtn = document.getElementById("musicBtn");
 
 let playing = false;
 
-musicBtn.addEventListener("click", () => {
+musicBtn.onclick = async function(){
 
-if (playing) {  
+    if (!playing) {
 
-    music.pause();  
-    musicBtn.innerHTML = "🎵 Music";  
+        try {
+            await music.play();
+            musicBtn.innerHTML = "🔇 Pause";
+            playing = true;
 
-} else {  
+        } catch(error) {
+            console.log(error);
+            alert("Music file cannot be played. Check music.mp3");
+        }
 
-    music.play();  
-    musicBtn.innerHTML = "🔇 Pause";  
+    } else {
 
-}  
+        music.pause();
+        musicBtn.innerHTML = "🎵 Music";
+        playing = false;
 
-playing = !playing;
+    }
 
-});
+};
 
 // Relationship timer
 // Change this date to your exact first day together
