@@ -286,3 +286,59 @@ font-size:16px;
 cursor:pointer;
 
 }
+
+
+
+/* ========================= */
+/* Episode Videos */
+/* ========================= */
+
+.episode-video{
+
+    display:block;
+    margin:25px auto;
+    border-radius:12px;
+    background:#000;
+
+}
+
+
+/* Vertical videos (720×1600 / 1080×1920) */
+
+.vertical-video{
+
+    width:100%;
+    max-width:400px;
+    height:auto;
+
+}
+
+
+/* Horizontal video (1280×720) */
+
+.horizontal-video{
+
+    width:100%;
+    max-width:900px;
+    height:auto;
+
+}
+
+
+/* Mobile optimization */
+
+@media(max-width:600px){
+
+    .vertical-video{
+
+        max-width:100%;
+
+    }
+
+    .horizontal-video{
+
+        max-width:100%;
+
+    }
+
+}
