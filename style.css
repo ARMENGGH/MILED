@@ -342,3 +342,26 @@ cursor:pointer;
     }
 
 }
+
+
+/* Episode 2 video */
+
+.video-container {
+
+    width:100%;
+    max-width:700px;
+    margin:30px auto;
+    background:#000;
+    border-radius:15px;
+    overflow:hidden;
+
+}
+
+
+.episode-video {
+
+    width:100%;
+    height:auto;
+    display:block;
+
+}
