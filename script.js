@@ -145,3 +145,18 @@ function closeEpisode1(){
 document.getElementById("episode1").style.display="none";
 
 }
+
+// Episode 2 controls
+
+function openEpisode2(){
+
+    document.getElementById("episode2").style.display="block";
+
+}
+
+
+function closeEpisode2(){
+
+    document.getElementById("episode2").style.display="none";
+
+}
